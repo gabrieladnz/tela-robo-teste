@@ -1,0 +1,70 @@
+* {
+    margin: 0; /* margem */
+    border: 0; /* borda */
+    padding: 0; /* distância entre elemento e a borda */
+    box-sizing: border-box; /* relação width e height*/
+    font-family: poppins, sans-serif;
+}
+
+body {
+    background-size: 1300px 640px;
+}
+
+header {
+    background-color: #003158;
+    opacity: 1;
+    padding-left: 1%; /* distância esquerda */
+    padding-top: 1.5%; /* distância no topo */
+    padding-bottom: 1.5%; /* distância pra baixo */
+}
+
+footer {
+    background-color: #003158;
+    padding-left: 1%;
+    padding-top: 0.5%;
+    /* ficar embaixo*/
+    position: absolute;
+    height: 12%;
+    width: 100%;
+    bottom: 0;
+}
+
+section {
+    background-color: orange;
+    border-radius: 1.5em;
+    height: 20%; /* altura*/
+    width: 20%; /* largura */
+    border: 4px solid orange; /* borda/moldura */
+    position: absolute;
+    box-shadow: 0px 10px 20px #00000056; /* sombra*/
+    top: 35%; /* posiciona na metade da tela */
+    margin-top: -25px; /* e retrocede metade da altura */
+    left: 50%; /* posiciona na metade da tela */
+    margin-left: -100px; /* e retrocede metade da largura */
+}
+
+h1 {
+    font-size: 20px;
+    color: white;
+    text-align: left;
+}
+
+h3 {
+    font-size: 14px;
+    color: black;
+    text-align: center;
+}
+
+h4, p {
+    font-size: 12px;
+    color: white;
+    text-align: justify;
+}
+
+#footer img {
+    width: 5%;
+    height: 8%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
