@@ -14,14 +14,14 @@ body {
 }
 
 header {
-    background-color: #003158;
+    background-color: rgba(0,49,88, 0.6);
     padding-left: 1%; /* distância esquerda */
     padding-top: 1.5%; /* distância no topo */
     padding-bottom: 1.5%; /* distância pra baixo */
 }
 
 footer {
-    background-color: #003158;
+    background-color: rgba(0,49,88, 0.6);
     padding-left: 1%;
     padding-top: 0.5%;
     /* ficar embaixo*/
@@ -38,11 +38,11 @@ section {
     width: 25%; /* largura */
     border: 4px solid orange; /* borda/moldura */
     box-shadow: 0px 10px 20px #00000056; /* sombra*/
-    position: fixed;
-    top: 35%; /* posiciona na metade da tela */
-    margin-top: -25px; /* e retrocede metade da altura */
-    left: 50%; /* posiciona na metade da tela */
-    margin-left: -100px; /* e retrocede metade da largura */
+    margin-top: 19%; /* e retrocede metade da altura */
+    /* deixam no centro*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
@@ -73,7 +73,9 @@ h4, p {
     float:right;
 }
 
-.robo-image {
-
+#robo-image {
     width: 20vh;
+    display: block;
+    margin-left: 30%; /* mover pra esquerda a imagem*/
+    margin-right: auto;
 }
