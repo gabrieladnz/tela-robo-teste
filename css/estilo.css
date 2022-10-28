@@ -8,6 +8,7 @@
 
 body {
     background-image: url("../img/fundo.png"); /* usar '../' sempre que for referenciar img no css*/
+    /* background fixo*/
     background-size: cover;
     background-repeat: no-repeat;
     /* manter imagem fixa independente do zoom*/
@@ -39,14 +40,9 @@ section {
     background-color: orange;
     border-radius: 1.7em; /* deixa redondo*/
     height: 25%; /* altura*/
-    width: 25%; /* largura */
+    width: 20%; /* largura */
     border: 4px solid orange; /* borda/moldura */
     box-shadow: 0px 10px 20px #00000056; /* sombra*/
-    margin-top: 19%; /* e retrocede metade da altura */
-    /* deixam no centro*/
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 h1 {
@@ -67,6 +63,30 @@ h4, p {
     text-align: justify;
 }
 
+.section-1 {
+    position: fixed;
+    left: 5%;
+    top: 35%;
+}
+
+.section-2 {
+    position: fixed;
+    left: 28%;
+    top: 35%;
+}
+
+.section-3 {
+    position: fixed;
+    left: 52%;
+    top: 35%;
+}
+
+.section-4 {
+    position: fixed;
+    left: 75%;
+    top: 35%;
+}
+
 .texto-section {
     font-size: 13px;
     text-align: center;
@@ -77,9 +97,23 @@ h4, p {
     float:right;
 }
 
-#robo-image {
-    width: 20vh;
-    display: block;
+#robo-image-1 {
+    width: 18vh;
     margin-left: auto; /* mover pra esquerda a imagem*/
-    margin-right: auto;
+}
+
+#robo-image-2 {
+    width: 18vh;
+    margin-left: auto; /* mover pra esquerda a imagem*/
+}
+
+#robo-image-3 {
+    width: 18vh;
+    margin-left: auto; /* mover pra esquerda a imagem*/
+}
+
+#robo-image-4 {
+    padding-bottom: 5%;
+    width: 18vh;
+    margin-left: auto; /* mover pra esquerda a imagem*/
 }
