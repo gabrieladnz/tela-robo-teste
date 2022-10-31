@@ -70,8 +70,6 @@
         pyautogui.hotkey('enter')
 
         #copiar ocorrencianão atende.. não atende..ANA PAULABoa tarde sr. StellaAPANA PAULASou a Ana Paula do Escritório
-        Eduardo Albuquerque Assessoria jurídica da Chevrolet.tudo bem?APANA PAULAGostaria de falar com a Sr. referente o
-        veiculoAPANA PAULAestamos com uma proposta de quitação para o seu contratopodemos conversar?
         pyautogui.hotkey('alt','tab')
         pyautogui.click(x=416, y=18)
         time.sleep(1)
