@@ -113,6 +113,6 @@ h4, p {
 }
 
 #robo-image-4 {
-    width: 18vh;
-    margin-left: auto; /* mover pra esquerda a imagem*/
+    width: 15vh;
+    margin-left: 35%; /* mover pra esquerda a imagem*/
 }
