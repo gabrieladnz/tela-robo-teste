@@ -1,6 +1,6 @@
 <?php
 
-    $run = shell_exec("robo.py");
-    header("location:index.html");
+    $run = shell_exec("python/robo.py");
+    header("location:indexErro.html");
     
 ?>

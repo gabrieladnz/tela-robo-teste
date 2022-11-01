@@ -6,8 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/estilo.css"> <!-- Conectar o arquivo CSS ao index-->
+    <link rel="stylesheet" type="text/css" href="css/estiloErro.css"> <!-- Conectar o arquivo CSS ao index-->
     <title>Página de acompanhamento</title>
+
+      <!-- Atualizar página automaticamente -->
+      <script language="Javascript">              
+		window.onload = function() 
+		{
+			setTimeout('location.reload();', 20000);
+		}
+	</script>
+    <!-- Fim do código atualizar página -->
 </head>
 
 <body>
@@ -22,8 +31,9 @@
         <h3>SRS - Cobrança - 53</h3>
         <br>
         <p class="texto-section">ROBÔ Nº 1</p>
+        <br><br>
         <!-- Div robô gif-->
-        <div id="robo-image-1"><img src="robo.svg"></div>
+        <div id="robo-image-1"><img src="roboErro.svg"></div>
     </section>
 
     <section class="section-2">
@@ -31,7 +41,8 @@
         <h3>SRS - Cobrança - 53</h3>
         <br>
         <p class="texto-section">ROBÔ Nº 2</p>
-        <div id="robo-image-2"><img src="robo.svg"></div>
+        <br><br>
+        <div id="robo-image-2"><img src="roboErro.svg"></div>
     </section>
 
     <section class="section-3">
@@ -39,7 +50,8 @@
         <h3>SRS - Cobrança - 53</h3>
         <br>
         <p class="texto-section">ROBÔ Nº 3</p>
-        <div id="robo-image-3"><img src="robo.svg"></div>
+        <br><br>
+        <div id="robo-image-3"><img src="roboErro.svg"></div>
     </section>
 
     <section class="section-4">
@@ -47,15 +59,8 @@
         <h3>SRC - Cobrança - 53</h3>
         <br>
         <p class="texto-section">ROBÔ Nº 4</p>
-        <br>
-        <!-- BOTÃO-->
-        <form action="inserircob.php" method="POST">
-            <input type="submit" class="buttonClass" name="Enviar" id="submit" value="Iniciar">
-        </form>
         <br><br>
-        <div id="robo-image-4"><img src="robo.svg"></div>
-        <!-- SOM DE ALERTA / quando para de funcionar -->
-        <audio src="audio/alerta.mp3" autoplay></audio>
+        <div id="robo-image-4"><img src="roboErro.svg"></div>
     </section>
 
     <!-- Rodapé da página-->
@@ -70,22 +75,8 @@
         <p>Fones: (81) 3322-5800</p>
     </footer>
 
-    <!-- JAVA SCRIPT -->
-    <script src="js/nprogress.js"></script>
-    <script>
-        $('body').show();
-        $('.version').text(NProgress.version);
-        NProgress.start();
-
-        var interval = setInterval(function () { NProgress.inc(); }, 1000);
-
-        $(window).on('load', function () {
-            clearInterval(interval);
-            NProgress.done();
-        });
-    </script>
-
-    <!-- -->
+    <!-- SOM DE ALERTA / quando para de funcionar -->
+    <audio src="audio/alerta.mp3" autoplay></audio>
 
 </body>
 

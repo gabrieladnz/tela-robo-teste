@@ -1,34 +1,35 @@
-        from selenium import webdriver
-        import time
-        import pyautogui
+from selenium import webdriver
+from pyjaco import Compiler
+import time
+import pyautogui
 
-        navegador = webdriver.Edge()
-        navegador.maximize_window()
-        navegador.get("https://prod-srs-collect-la.io.gmfinancial.com/Collections/servlet/common.CollectionsCommonGatewayServlet?requestID=5")
+navegador = webdriver.Edge()
+navegador.maximize_window()
+navegador.get("https://prod-srs-collect-la.io.gmfinancial.com/Collections/servlet/common.CollectionsCommonGatewayServlet?requestID=5")
 
-        #login
-        navegador.find_element_by_xpath('//*[@id="User_ID"]').send_keys('LX3PHT')
-        navegador.find_element_by_xpath('//*[@id="TxtPWD"]').send_keys('Gmac*789')
-        time.sleep(2)
-        navegador.find_element_by_xpath('/html/body/form/table/tbody/tr[5]/td[2]/a/img').click()
+#login
+navegador.find_element_by_xpath('//*[@id="User_ID"]').send_keys('LX3PHT')
+navegador.find_element_by_xpath('//*[@id="TxtPWD"]').send_keys('Gmac*789')
+time.sleep(2)
+navegador.find_element_by_xpath('/html/body/form/table/tbody/tr[5]/td[2]/a/img').click()
 
-        #Core Colecttion
-        navegador.find_element_by_xpath('//*[@id="mainbody"]/form/table[1]/tbody/tr[6]/td/button').click()
-        navegador.find_element_by_xpath('/html/body/div[1]/div[3]').click()
-        navegador.find_element_by_xpath('/html/body/div[4]/div[3]').click()
+#Core Colecttion
+navegador.find_element_by_xpath('//*[@id="mainbody"]/form/table[1]/tbody/tr[6]/td/button').click()
+navegador.find_element_by_xpath('/html/body/div[1]/div[3]').click()
+navegador.find_element_by_xpath('/html/body/div[4]/div[3]').click()
 
-        #Abrir outra aba para o 233
-        pyautogui.hotkey('ctrl','t')
-        time.sleep(2)
-        pyautogui.click(x=109, y=43)
-        pyautogui.write('10.10.0.233/robos/srs_cob/')
-        time.sleep(1)
-        pyautogui.hotkey('enter')
-        time.sleep(10)
+#Abrir outra aba para o 233
+pyautogui.hotkey('ctrl','t')
+time.sleep(2)
+pyautogui.click(x=109, y=43)
+pyautogui.write('10.10.0.233/robos/srs_cob/')
+time.sleep(1)
+pyautogui.hotkey('enter')
+time.sleep(10)
 
-        #Repetição
-        rep = 1
-        for rep in range(1,500):
+#Repetição
+rep = 1
+for rep in range(1,500):
 
         #acesso link 233
         pyautogui.doubleClick(x=23, y=280)
