@@ -132,34 +132,12 @@ p {
 #robo-image-4 {
     width: 15vh;
     margin-left: 35%;
-    /* mover pra esquerda a imagem*/
-    margin-top: -15%;
 }
 
-.buttonClass {
-    font-size: 12px;
-    font-family: Arial;
-    width: 80px;
-    height: 30px;
-    border-width: 0px;
-    color: #ffffff;
-    border-color: #74b807;
-    font-weight: bold;
-    border-top-left-radius: 42px;
-    border-top-right-radius: 42px;
-    border-bottom-left-radius: 42px;
-    border-bottom-right-radius: 42px;
-    box-shadow: inset 0px 1px 0px 0px #a4e271;
-    text-shadow: inset 0px 1px 0px #528009;
-    background: linear-gradient(#89c403, #77a809);
+.imgButton {
     cursor: pointer;
-    /* marca a mãozinha*/
     position: absolute;
-    /* manter elemento sobreposto*/
-    margin-top: auto;
-    margin-left: 35%;
-}
-
-.buttonClass:hover {
-    background: linear-gradient(#77a809, #89c403);
+    max-widht:32px;
+    max-height:32px;
+    margin-left: 45%;
 }
