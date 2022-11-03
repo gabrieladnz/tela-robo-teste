@@ -1,6 +1,6 @@
 <?php
 
-    $run = shell_exec("python/robo.py");
+    $run = shell_exec("srscobranca.py");
     header("location:indexErro.html");
     
 ?>
