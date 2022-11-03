@@ -9,14 +9,29 @@
     <link rel="stylesheet" type="text/css" href="css/estiloErro.css"> <!-- Conectar o arquivo CSS ao index-->
     <title>Página de acompanhamento</title>
 
-      <!-- Atualizar página automaticamente -->
-      <script language="Javascript">              
-		window.onload = function() 
-		{
-			setTimeout('location.reload();', 20000);
-		}
-	</script>
+    <!-- Atualizar página automaticamente -->
+    <script language="Javascript">
+        window.onload = function () {
+            setTimeout('location.reload();', 20000);
+        }
+    </script>
     <!-- Fim do código atualizar página -->
+
+    <!-- Piscando tela -->
+    <script>
+        var teste = 0;
+        setInterval(piscar, 100000);
+        function piscar() {
+            if (teste < 1) {
+                teste++;
+                document.getElementById('piscando').style.opacity = '1';
+            } else {
+                teste = 0;
+                document.getElementById('piscando').style.opacity = '0';
+            }
+        };
+    </script>
+    <!-- Fim piscando tela -->
 </head>
 
 <body>
@@ -26,12 +41,17 @@
     </header>
 
     <!-- Section -->
-    <section class="section-1">
+    <section id="piscando" class="section-1">
         <br>
         <h3>SRS - Cobrança - 53</h3>
         <br>
         <p class="texto-section">ROBÔ Nº 1</p>
-        <br><br>
+        <br>
+        <!-- BOTÃO DESLIGAR-->
+        <form action="parar.php" method="POST">
+            <input type="image" class="imgButton2" src="img/desligar.png" title="Desligar" alt="submit">
+        </form>
+        <br>
         <!-- Div robô gif-->
         <div id="robo-image-1"><img src="roboErro.svg"></div>
     </section>
