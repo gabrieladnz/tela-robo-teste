@@ -137,7 +137,74 @@ p {
 .imgButton {
     cursor: pointer;
     position: absolute;
-    max-widht:32px;
-    max-height:32px;
+    max-widht: 32px;
+    max-height: 32px;
     margin-left: 45%;
+}
+
+/* BOTÃO DESLIZANTE */
+
+.switch__container {
+    cursor: pointer;
+    position: absolute;
+    margin-left: 35%;
+}
+
+.switch {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+}
+
+.switch+label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+
+.switch--shadow+label {
+    padding: 2px;
+    width: 70px;
+    height: 35px;
+    background-color: #dddddd;
+    border-radius: 60px;
+}
+
+.switch--shadow+label:before,
+.switch--shadow+label:after {
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    content: '';
+}
+
+.switch--shadow+label:before {
+    right: 1px;
+    background-color: #f1f1f1;
+    border-radius: 60px;
+    transition: all 0.4s;
+}
+
+/* mudar bolinha*/
+.switch--shadow+label:after {
+    height: 33px;
+    width: 33px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s;
+}
+
+/* INTERAÇÃO COM O CLIQUE */
+
+.switch--shadow:checked+label:before {
+    background-color: #2aec41;
+}
+
+.switch--shadow:checked+label:after {
+    transform: translateX(35px);
 }

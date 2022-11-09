@@ -7,7 +7,21 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/estilo.css"> <!-- Conectar o arquivo CSS ao index-->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" /> <!-- fav icon-->
     <title>Página de acompanhamento</title>
+
+    <!-- 
+    <script type="text/javascript">
+        $('input[type="checkbox"][name="switch-shadow"]').change(function () {
+            if ($('input.switch-shadow').is(':checked')) {
+
+                console.log('oi');
+                // Aqui vai o $.post();
+            }
+        });
+    </script>
+    -->
+
 </head>
 
 <body>
@@ -16,89 +30,96 @@
         <h1>Acompanhamento dos robôs</h1>
     </header>
 
-    <!-- Section -->
-    <section class="section-1">
-        <br>
-        <h3>SRS - Cobrança - 53</h3>
-        <br>
-        <p class="texto-section">ROBÔ Nº 1</p>
-        <br>
-        <!-- BOTÃO INICIAR-->
-        <form action="inserircob.php" method="POST">
-            <input type="image" class="imgButton" src="img/play.png" title="Iniciar" alt="submit">
-        </form>
-        <!-- Div robô gif-->
-        <div id="robo-image-1"><img src="robo.svg"></div>
-    </section>
+        <!-- Section -->
+        <section class="section-1">
+            <br>
+            <h3>SRS - Cobrança - 53</h3>
+            <br>
+            <p class="texto-section">ROBÔ Nº 1</p>
+            <br>
 
-    <section class="section-2">
-        <br>
-        <h3>SRS - Cobrança - 53</h3>
-        <br>
-        <p class="texto-section">ROBÔ Nº 2</p>
-        <br>
-        <!-- BOTÃO 
-        <form action="inserircob.php" method="POST">
-            <input type="image" class="imgButton" src="img/play.png" title="Iniciar" alt="submit">
-        </form> -->
-        <div id="robo-image-2"><img src="robo.svg"></div>
-    </section>
+            <!-- BOTÃO INICIAR-->
+            <form action="inserircob.php" method="POST">
+            <div class="switch__container">
+                    <input type="checkbox" id="switch-shadow" class="switch switch--shadow" title="Iniciar"
+                        alt="submit"/>
+                        <label for="switch-shadow"></label>
+                    </div>
+                </form>
 
-    <section class="section-3">
-        <br>
-        <h3>SRS - Cobrança - 53</h3>
-        <br>
-        <p class="texto-section">ROBÔ Nº 3</p>
-        <br>
-        <!-- BOTÃO
+            <!-- Div robô gif-->
+            <div id="robo-image-1"><img src="robo.svg"></div>
+
+        </section>
+
+        <section class="section-2">
+            <br>
+            <h3>SRS - Cobrança - 53</h3>
+            <br>
+            <p class="texto-section">ROBÔ Nº 2</p>
+            <br>
+            <!-- BOTÃO 
         <form action="inserircob.php" method="POST">
             <input type="image" class="imgButton" src="img/play.png" title="Iniciar" alt="submit">
         </form> -->
-        <div id="robo-image-3"><img src="robo.svg"></div>
-    </section>
+            <div id="robo-image-2"><img src="robo.svg"></div>
+        </section>
 
-    <section class="section-4">
-        <br>
-        <h3>SRC - Cobrança - 53</h3>
-        <br>
-        <p class="texto-section">ROBÔ Nº 4</p>
-        <br>
-        <!-- BOTÃO
+        <section class="section-3">
+            <br>
+            <h3>SRS - Cobrança - 53</h3>
+            <br>
+            <p class="texto-section">ROBÔ Nº 3</p>
+            <br>
+            <!-- BOTÃO
         <form action="inserircob.php" method="POST">
             <input type="image" class="imgButton" src="img/play.png" title="Iniciar" alt="submit">
         </form> -->
-        <div id="robo-image-4"><img src="robo.svg"></div>
-    </section>
+            <div id="robo-image-3"><img src="robo.svg"></div>
+        </section>
 
-    <!-- Rodapé da página-->
-    <footer>
+        <section class="section-4">
+            <br>
+            <h3>SRC - Cobrança - 53</h3>
+            <br>
+            <p class="texto-section">ROBÔ Nº 4</p>
+            <br>
+            <!-- BOTÃO
+        <form action="inserircob.php" method="POST">
+            <input type="image" class="imgButton" src="img/play.png" title="Iniciar" alt="submit">
+        </form> -->
+            <div id="robo-image-4"><img src="robo.svg"></div>
+        </section>
 
-        <!-- Div imagem-->
-        <div id="imagem"><img src="img/logo.png"></div>
-        <!-- Dados do rodapé-->
-        <h4>Grupo EA</h4>
-        <p>Avenida Dantas Barreto, 1090 - 6º andar, São José, Recife - PE</p>
-        <p>CEP: 50020-000</p>
-        <p>Fones: (81) 3322-5800</p>
-    </footer>
+        <!-- Rodapé da página-->
+        <footer>
 
-    <!-- JAVA SCRIPT -->
-    <script src="js/nprogress.js"></script>
-    <script>
-        $('body').show();
-        $('.version').text(NProgress.version);
-        NProgress.start();
+            <!-- Div imagem-->
+            <div id="imagem"><img src="img/logo.png"></div>
+            <!-- Dados do rodapé-->
+            <h4>Grupo EA</h4>
+            <p>Avenida Dantas Barreto, 1090 - 6º andar, São José, Recife - PE</p>
+            <p>CEP: 50020-000</p>
+            <p>Fones: (81) 3322-5800</p>
+        </footer>
 
-        var interval = setInterval(function () { NProgress.inc(); }, 1000);
+        <!-- JAVA SCRIPT -->
+        <script src="js/nprogress.js"></script>
+        <script>
+            $('body').show();
+            $('.version').text(NProgress.version);
+            NProgress.start();
 
-        $(window).on('load', function () {
-            clearInterval(interval);
-            NProgress.done();
-        });
-    </script>
+            var interval = setInterval(function () { NProgress.inc(); }, 1000);
 
-    <!-- -->
+            $(window).on('load', function () {
+                clearInterval(interval);
+                NProgress.done();
+            });
+        </script>
 
-</body>
+        <!-- -->
+
+    </onload=>
 
 </html>
